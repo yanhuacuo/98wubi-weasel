@@ -12,7 +12,7 @@ app_options:
 style:
   color_scheme: ink
   font_face: 98WB-0
-  font_point: 16
+  font_point: 18
   horizontal: false
   fullscreen: false
   inline_preedit: false

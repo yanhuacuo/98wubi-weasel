@@ -1,18 +1,7 @@
--- Usage:
---  engine:
---    ...
---    translators:
---      ...
---      - lua_translator@lua_function3
---      - lua_translator@lua_function4
---      ...
---    filters:
---      ...
---      - lua_filter@lua_function1
---      - lua_filter@lua_function2
---      ...
+-- rime.lua
+new_spelling = require("ace/new_spelling")
+helper = require("ace/helper")
 
---- date/time translator
 function date_translator(input, seg)
    if (input == "date") then
       -- Candidate(type, start, end, text, comment)
@@ -30,7 +19,7 @@ end
 function single_char(input, env)
    b = env.engine.context:get_option("single_char")
    for cand in input:iter() do
-      if (not b or utf8.len(cand.text) == 1 or cand.type == "qsj"or cand.type == "time"or cand.type == "date") then
+      if (not b or utf8.len(cand.text) == 1 or cand.type == "qsj"or cand.type == "time"or cand.type == "date"or cand.type == "help") then
          yield(cand)
       end
    end

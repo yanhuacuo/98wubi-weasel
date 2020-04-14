@@ -36,7 +36,7 @@ engine:
     - charset_filter@gb2312  
     - simplifier
     - "reverse_lookup_filter@ci_reverse_lookup"
-    - "simplifier@98wb_spelling_rk"
+#   - "simplifier@98wb_spelling_rk"
     - "simplifier@98wb_spelling"
     - "simplifier@jiayin"
     - uniquifier

@@ -9,6 +9,7 @@ schema_list:
   - schema: wubi98_U
   - schema: py
 
+
 switcher:
   caption: 〔方案選單〕
   hotkeys:

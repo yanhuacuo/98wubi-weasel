@@ -85,10 +85,12 @@ xcopy /S %tables%\patch\data "%regvalue%\data"
 
 echo "5-更新APPDATA目录"
 
-xcopy /S %tables%\patch\data\wubi98_*.extended.dict.yaml "%UserDir%"
-xcopy /S %tables%\patch\data\*.custom.yaml "%UserDir%"
-xcopy /S %tables%\patch\data\wubi98_*.schema.yaml "%UserDir%"
-xcopy /S %tables%\patch\data\weasel.yaml "%UserDir%"
+md "%UserDir%\build"
+
+xcopy /S %tables%\patch\data\bin\*.bin "%UserDir%\build"
+
+xcopy /S %tables%\patch\data\*.yaml "%UserDir%"
+
 xcopy /S %tables%\patch\data\*.lua "%UserDir%"
 
 echo "6-已放好了所有「新文件」，即将唤醒算法服务"
