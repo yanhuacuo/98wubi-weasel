@@ -10,6 +10,10 @@
 
 3：98超集字体支持，请到「98五笔资源库」的「字体支持」处完成。
 
+## 方案选择
+
+![方案选择](https://raw.githubusercontent.com/yanhuacuo/98wubi-weasel/master/demo/5.jpg)
+
 ## 演示
 
 ![输入help](https://raw.githubusercontent.com/yanhuacuo/98wubi-weasel/master/demo/1.jpg)
